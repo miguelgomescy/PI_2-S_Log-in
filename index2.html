@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica VitaMed | Log-In</title>
+    <title>Clinica VitaMed | Criar Conta</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="assets/img/VitaMed.png">
@@ -14,11 +14,11 @@
     
     <div class="logo">
         <img src="assets/img/VitaMed.png" alt="">
-        <a href="#">Bem vindo de volta!</a>
-
+        <a href="#">Criar conta</a>
     </div>
+
     <div class="container">
-        <h1>Acesse sua conta! 😉</h1>
+        <span class="Crie"> <h1>Crie sua conta! 😉</h1></span>
         <div class="social-login">
             <button class="google">
                 <i class='bx bxl-google'></i>
@@ -38,6 +38,15 @@
         </div>
 
         <form>
+
+            <label for="email">Nome completo:</label>
+            <div class="costume-input">
+                <input type="email" name="email" 
+                placeholder="Insira seu Nome completo" title="Insira seu email"
+                autocomplete="off">
+                <i class='bx bx-rename' ></i>
+            </div>
+
             <label for="email">Email:</label>
             <div class="costume-input">
                 <input type="email" name="email" 
@@ -46,22 +55,66 @@
                 <i class='bx bx-at'></i>
             </div>
 
+            
+            <label for="number">Telefone:</label>
+            <div class="costume-input">
+                <input type="" name="phone" 
+                placeholder="Insira seu telefone: (xx) xxxx-xxxx" title="Insira seu telefone"
+                autocomplete="off">
+                <i class='bx bx-phone'></i>
+            </div>
+
+            
+            <label for="number">CPF:</label>
+            <div class="costume-input">
+                <input type="" name="phone" 
+                placeholder="Insira seu CPF" title="Insira seu CPF"
+                autocomplete="off">
+                <i class='bx bx-id-card'></i>
+            </div>
+
+
+
+
+
+
+
 
             <label for="password">Senha:</label>
             <div class="costume-input">
                 <input type="password" name="Senha" id="senha"
                 placeholder="Insira sua Senha" title="Insira sua Senha" >
+               
+                <i class="bi bi-eye-fill" id="eye" onclick="mostrarSenha(this, 'senha')"></i>
+            </div>
 
-            <i class="bi bi-eye-fill" id="eye" onclick="mostrarSenha(this, 'senha')"></i>
             
+            <label for="password">Confirmar Senha:</label>
+            <div class="costume-input">
+                <input type="password" name="ConfirmarSenha" id="ConfirmarSenha"
+                placeholder="Confirme sua Senha" title="Insira sua Senha" >
+
+                <i class="bi bi-eye-fill" id="eyeConfirmar" onclick="mostrarSenha(this, 'ConfirmarSenha')"></i>
             </div>
 
 
 
-            <button class="login">Login</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <button class="login">Criar conta</button>
             <div class="links">
-                <a href="index3.html">Refaça sua Senha</a>
-                <a href="index2.html">Não tem uma conta?</a>
+                <span class="acesse"><a href="index.html">Acesse sua conta</a></span>
             </div>
 
             
