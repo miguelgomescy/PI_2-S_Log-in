@@ -10,3 +10,7 @@ function mostrarSenha(elemento, idSenha) {
         btnMostrarSenha.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
     }
 }
+
+// const butonElement = document.querySelector("#buton1").addEventListener("click", e => {
+//     e.preventDefault();
+// })
